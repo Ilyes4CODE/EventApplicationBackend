@@ -42,7 +42,7 @@ def register(request):
         )
             return Response({'info':'your account created'},status=status.HTTP_201_CREATED)
         else:
-            return Response({'info':'Username not found Please create an account'})
+            return Response({'info':'This account exists'})
     return Response(serilizer.errors)
     
     
