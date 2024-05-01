@@ -7,5 +7,6 @@ urlpatterns = [
     path('Enroll_Event/<str:pk>/',views.Enroll_in_Event),
     path('Like_Event/<str:pk>/',views.Like_Event),
     path('Dislike_Event/<str:pk>/',views.Dislike_Event),
+    path('Search_Event/',views.search_events_by_title),
     
 ]

@@ -25,8 +25,8 @@ class Events(models.Model):
     image = models.ImageField(upload_to='Event_pictures/')
     is_paid = models.BooleanField()
     price = models.FloatField(default=0.0)
-    likers = models.ManyToManyField(User, related_name='Likers',null=True)
-    dislikers = models.ManyToManyField(User, related_name='Dislikers',null=True)
+    likers = models.ManyToManyField(User, related_name='Likers',blank=True)
+    dislikers = models.ManyToManyField(User, related_name='Dislikers',blank=True)
     enrolled_users = models.ManyToManyField(User, related_name='enrolled_events', blank=True)
     enrollment_limit = models.PositiveIntegerField()
 

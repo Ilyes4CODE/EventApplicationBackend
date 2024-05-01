@@ -65,3 +65,4 @@ def Related_Tickets(request):
     return paginator.get_paginated_response(serializer.data)
 
 
+
